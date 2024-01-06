@@ -33,4 +33,6 @@ alias \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	shred="shred -zuvn 5"
+	shred="shred -zuvn 5" \
+	alias ..='cd ..' \
+	alias ...='cd ../..'
