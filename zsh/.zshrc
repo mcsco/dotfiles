@@ -90,6 +90,9 @@ bindkey '^e' edit-command-line
 # move zcompdump file from ~/
 #autoload -U compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
+# Add SSH key
+ssh-add ~/.ssh/box/box_ed25519
+
 # Load syntax highlighting; should be last.
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
