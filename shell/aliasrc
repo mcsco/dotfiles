@@ -27,12 +27,18 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	g="git" \
-	trem="transmission-remote" \
-	YT="youtube-viewer" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	shred="shred -zuvn 5" \
-	alias ..='cd ..' \
-	alias ...='cd ../..'
+	..='cd ..' \
+	...='cd ../..'
+
+# git shortcuts
+alias \
+	g="git" \
+	ga="git add" \
+	gcm="git commit -am" \
+	gp="git push origin main" \
+	gstat="git status" \
+	gc="git clone"

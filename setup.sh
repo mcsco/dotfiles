@@ -20,8 +20,7 @@ ln -svf ~/Projects/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
 echo "Changing the defautl shell to zsh. You will need to provide a root password."
 chsh -s $(which zsh) $USER
 
-echo "Would you like to clean up your home directory? (y/n)"
-read response
+echo "Would you like to clean up your home directory? (y/n) " response
 
 if [ $response == "y" ]; then
     mkdir -vp .bash_folder
