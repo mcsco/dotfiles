@@ -24,10 +24,10 @@ echo "Would you like to clean up your home directory? (y/n) " response
 
 if [ $response == "y" ]; then
     mkdir -vp .bash_folder
-    mv .bash_history .bash_folder/
-    mv .bash_logout .bash_folder/
-    mv .bashrc .bash_folder/
-    mv .profile .bash_folder/
+    mv ~/.bash_history .bash_folder/
+    mv ~/.bash_logout .bash_folder/
+    mv ~/.bashrc .bash_folder/
+    mv ~/.profile .bash_folder/
 
     echo "Bash files cleaned up."
 elif [ $response ==  "n" ]; then
