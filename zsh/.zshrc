@@ -91,7 +91,7 @@ bindkey '^e' edit-command-line
 #autoload -U compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
 # Add SSH key
-ssh-add ~/.ssh/box/box_ed25519
+ssh-add ~/.ssh/box/box_ed25519 2> /dev/null
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
