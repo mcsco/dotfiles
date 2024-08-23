@@ -97,3 +97,4 @@ ssh-add ~/.ssh/box/box_ed25519 2> /dev/null
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # neofetch
+export LIBVIRT_DEFAULT_URI='qemu:///system'

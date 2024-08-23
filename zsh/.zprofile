@@ -5,7 +5,7 @@
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-
+export PATH="$PATH:/opt/nvim/bin"
 unsetopt PROMPT_SP
 
 # Default programs:

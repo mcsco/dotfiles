@@ -26,6 +26,7 @@ alias \
 
 # These common commands are just too long! Abbreviate them.
 alias \
+	update="~/src/scripts/upgrade_with_snapshot.sh" \
 	ka="killall" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
