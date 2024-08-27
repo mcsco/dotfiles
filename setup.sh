@@ -11,9 +11,9 @@ mkdir -vp ~/.config/nvim
 touch ~/.cache/zsh/history
 
 # Create Links
-ln -svf ~/src/dotfiles/zsh/.zprofile ~/.zprofile
-ln -svf ~/src/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
-ln -svf ~/src/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
+ln -svf ~/git/dotfiles/zsh/.zprofile ~/.zprofile
+ln -svf ~/git/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
+ln -svf ~/git/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
 # ln -svf ~/Projects/dotfiles/bin/.. ~/.local/bin/..
 
 # Changing shell to zsh
@@ -24,7 +24,7 @@ echo "Would you like to clean up your home directory? (y/n) "
 read response
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
-    mkdir -vp .bash_folder
+    mkdir -vp ~/.bash_folder
     mv ~/.bash_history .bash_folder/
     mv ~/.bash_logout .bash_folder/
     mv ~/.bashrc .bash_folder/
