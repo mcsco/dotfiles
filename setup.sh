@@ -11,10 +11,13 @@ mkdir -vp ~/.config/nvim
 touch ~/.cache/zsh/history
 
 # Create Links
-ln -svf ~/git/dotfiles/zsh/.zprofile ~/.zprofile
-ln -svf ~/git/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
-ln -svf ~/git/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
+ln -svf ~/dev/dotfiles/zsh/.zprofile ~/.zprofile
+ln -svf ~/dev/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
+ln -svf ~/dev/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
 # ln -svf ~/Projects/dotfiles/bin/.. ~/.local/bin/..
+
+# clone neovim kickstart
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 # Changing shell to zsh
 echo "Changing the defautl shell to zsh. You will need to provide a root password."
@@ -25,10 +28,10 @@ read response
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
     mkdir -vp ~/.bash_folder
-    mv ~/.bash_history .bash_folder/
-    mv ~/.bash_logout .bash_folder/
-    mv ~/.bashrc .bash_folder/
-    mv ~/.profile .bash_folder/
+    mv ~/.bash_history ~/.bash_folder/
+    mv ~/.bash_logout ~/.bash_folder/
+    mv ~/.bashrc ~/.bash_folder/
+    mv ~/.profile ~/.bash_folder/
 
     echo "Bash files cleaned up."
 elif [[ "$response" =~ ^[Nn]$ ]]; then
