@@ -18,12 +18,13 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="eza --color=auto --group-directories-first --icons=auto" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
 
+#ls="ls -hN --color=auto --group-directories-first"
 # These common commands are just too long! Abbreviate them.
 alias \
 	update="~/dev/scripts/upgrade_with_snapshot.sh" \
