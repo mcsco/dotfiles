@@ -11,9 +11,9 @@ mkdir -vp ~/.config/nvim
 touch ~/.cache/zsh/history
 
 # Create Links
-ln -svf ~/dev/dotfiles/zsh/.zprofile ~/.zprofile
-ln -svf ~/dev/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
-ln -svf ~/dev/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
+ln -svf ~/Development/dotfiles/zsh/.zprofile ~/.zprofile
+ln -svf ~/Development/dotfiles/zsh/.zshrc ~/.config/zsh/.zshrc
+ln -svf ~/Development/dotfiles/shell/aliasrc ~/.config/shell/aliasrc
 # ln -svf ~/Projects/dotfiles/bin/.. ~/.local/bin/..
 
 # clone neovim kickstart
