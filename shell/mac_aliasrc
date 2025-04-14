@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	rsync="rsync -vrPlu" \
+	mkd="mkdir -pv" \
+	yt='yt-dlp -o "%(uploader)s-%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" --add-metadata -icv' \
+	yta="yt -x -f bestaudio/best" \
+	ytt="yt --skip-download --write-thumbnail" \
+	ffmpeg="ffmpeg -hide_banner" \
+	c="clear" \
+	subl='open -a "Sublime Text"' \
+	pip='pip3' \
+	python='python3' \
+	hide="/Users/michael/Development/scripts/hide_hidden.sh" \
+	show="/Users/michael/Development/scripts/show_hidden.sh" \
+	gt="/Users/michael/Development/scripts/get_transcript.sh"
+
+# Colorize commands when possible.
+alias \
+	ls="gls -lhN --color=auto --group-directories-first" \
+	ll="gls -FGlAhp --color=auto --group-directories-first" \
+	la="gls -A --color=auto --group-directories-first" \
+	l="gls -CF --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	ip="ip -color=auto"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	sdn="shutdown -h now" \
+	e="nvim" \
+	v="nvim" \
+	vim="nvim" \
+	shred="shred -zuvn 5" \
+	..='cd ..' \
+	...='cd ../..'
+
+# git shortcuts
+alias \
+	g="git" \
+	ga="git add" \
+	gcm="git commit -am" \
+	gp="git push origin main" \
+	gstat="git status" \
+	gc="git clone"
