@@ -31,7 +31,7 @@ if [[ "$response" =~ ^[Yy]$ ]]; then
     mv ~/.bash_history ~/.bash_folder/
     mv ~/.bash_logout ~/.bash_folder/
     mv ~/.bashrc ~/.bash_folder/
-    mv ~/.profile ~/.bash_folder/
+    mv ~/.bash_profile ~/.bash_folder/ #fedora uses .bash_profile not .profile
 
     echo "Bash files cleaned up."
 elif [[ "$response" =~ ^[Nn]$ ]]; then

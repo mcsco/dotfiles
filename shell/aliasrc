@@ -18,12 +18,13 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="eza --color=auto --group-directories-first --icons=auto" \
+	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
-
+# eza is not available in fedora's repo
+#ls="eza --color=auto --group-directories-first --icons=auto"
 #ls="ls -hN --color=auto --group-directories-first"
 # These common commands are just too long! Abbreviate them.
 alias \
